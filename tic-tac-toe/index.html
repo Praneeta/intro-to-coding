@@ -1,0 +1,60 @@
+<html>
+  <head>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.4/jquery-ui.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css"></style>
+  </head>
+
+  <body>
+    <h1>Welcome to tic-tac-toe</h1>
+    <div class="container game">
+      <div class="row row-1">
+        <div class="col col-1 droppable">
+          1
+        </div>
+        <div class="col col-2 droppable">
+          2
+        </div>
+        <div class="col col-3 droppable">
+          3
+        </div>
+      </div>
+      <div class="row row-2">
+        <div class="col col-1 droppable">
+          4
+        </div>
+        <div class="col col-2 droppable">
+          5
+        </div>
+        <div class="col col-3 droppable">
+          6
+        </div>
+      </div>
+      <div class="row row-3">
+        <div class="col col-1 droppable">
+          7
+        </div>
+        <div class="col col-2 droppable">
+          8
+        </div>
+        <div class="col col-3 droppable">
+          9
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="x-o draggable">X</div>
+      <div class="x-o draggable">O</div>
+    </div>
+    <script>
+      $(function() {
+        $( ".draggable" ).draggable();
+        $( ".droppable" ).droppable({
+          drop: function( event, ui ) {
+            ui.draggable.draggable('disable')
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

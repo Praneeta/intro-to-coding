@@ -1,0 +1,58 @@
+<!--This is an html comment-->
+<!--Any code in comment is not computed-->
+<!--To see how this page looks in the browser,
+  find this file in your Finder and right click on it
+  and say open in google chrome.
+-->
+
+<html>
+  <head>
+    <title>HTML + JS = Awesomeness</title>
+  </head>
+  <body>
+    <p>
+      This is a sample of how you can use javascript with html.
+      It teaches you what are variables and functions and how to use them.
+    </p>
+    <script type="text/javascript">
+
+      // This is how you create a function.
+      // A function is a collection of instructions that when perform a task.
+      // The function below prints the length of your name.
+      function nameLength() {
+
+        // This collects you name in a variable so that you can use it
+        // in multiple places without repeating yourself
+        var name = 'Praneeta';
+
+        var nameLength = name.length;
+
+        // You can alert the statements
+        // You can create a long string by combining small strings and variables.
+
+        var displayString = 'Hello' + name + '. The length to you name is ' + nameLength
+
+        alert(displayString)
+
+        // This is how you write comments in javascript
+        // Any line that starts with // will not be computed.
+        // This will print the name length in your console.
+        // To open console, right click on the web page and select Inspect Element
+        // Click on console tab and you should see this statement there.
+        console.log('Hello' + name + '. The length to you name is ' + nameLength)
+
+
+        // Task 1:
+        // Change the displayString to now say:
+        // My name is Vrunda. My name has 6 letters
+        // Do this by combining variables and strings.
+
+        // Task 2:
+        // Change the console log to be same as the displayString.
+      }
+
+      // This is how you call a function.
+      nameLength();
+    </script>
+  </body>
+</html>
